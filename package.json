@@ -14,7 +14,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "element-ui": "^2.15.13",
+    "v-viewer": "^1.6.4",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -64,7 +66,7 @@
     "rimraf": "^2.6.0",
     "selenium-server": "^3.0.1",
     "semver": "^5.3.0",
-    "shelljs": "^0.7.6",
+    "shelljs": "^0.8.5",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-jest": "^1.0.2",
