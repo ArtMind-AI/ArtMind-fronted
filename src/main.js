@@ -5,8 +5,16 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import Viewer from 'v-viewer'
+import 'viewerjs/dist/viewer.css'
+// 引入 axios
+// 该文件是脚手架项目中的main.js
+
+import axios from 'axios'
+Vue.prototype.$axios = axios // 在Vue的原型上添加一个$http属性，该属性保存了axios
+Vue.use(Viewer)
 Vue.use(ElementUI)
-Vue.config.productionTip = false
+axios.defaults.baseURL = '/api'
 
 /* eslint-disable no-new */
 new Vue({

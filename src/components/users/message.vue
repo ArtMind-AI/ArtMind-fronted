@@ -88,6 +88,7 @@ export default {
   border:15px solid #FFFFFF;
   border-radius: 10px;
   background-color: #FFFFFF;
-  margin: 50px;
+  margin: 20px;
+  height: 90vh;
 }
 </style>

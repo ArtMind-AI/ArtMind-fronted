@@ -8,9 +8,12 @@
 export default {
   name: 'App',
   components: {},
-  methods: {},
+  methods: {
+  },
   data () {
-    return {}
+    return {
+      data: ''
+    }
   }
 }
 </script>

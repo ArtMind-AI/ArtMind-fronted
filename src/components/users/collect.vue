@@ -2,7 +2,8 @@
   <el-container style="position:absolute;left:0;right:0;top:0;bottom:0;
   overflow:hidden;
   background: rgb(216,239,255);
-background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 20%, rgba(255,233,253,1) 40%, rgba(230,242,251,1) 60%, rgba(226,246,255,1) 80%, rgba(255,255,255,1) 100%);">
+background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 20%, rgba(255,233,253,1) 40%, rgba(230,242,251,1) 60%, rgba(226,246,255,1) 80%, rgba(255,255,255,1) 100%)
+;">
     <page-tool></page-tool>
     <el-container class="el-co">
       <Header></Header>
@@ -21,7 +22,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                   <div>
                     <div>
                       <el-image
-                        :src="require('../../assets/0 (1).jpg')"
+                        :src="require('../../assets/1.jpg')"
                         :fit="fit"
                         style="width: 148px; height: 148px;
                 border: 1px solid #c0ccda;
@@ -42,7 +43,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                   <div>
                     <div>
                       <el-image
-                        :src="require('../../assets/0 (2).jpg')"
+                        :src="require('../../assets/2.jpg')"
                         :fit="fit"
                         style="width: 148px; height: 148px;
                 border: 1px solid #c0ccda;

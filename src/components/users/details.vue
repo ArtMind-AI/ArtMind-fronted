@@ -2,7 +2,8 @@
   <el-container style="position:absolute;left:0;right:0;top:0;bottom:0;
   overflow:hidden;
   background: rgb(216,239,255);
-background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 20%, rgba(255,233,253,1) 40%, rgba(230,242,251,1) 60%, rgba(226,246,255,1) 80%, rgba(255,255,255,1) 100%);">
+background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 20%, rgba(255,233,253,1) 40%, rgba(230,242,251,1) 60%, rgba(226,246,255,1) 80%, rgba(255,255,255,1) 100%);
+">
     <page-tool></page-tool>
     <el-main class="details-mian-div0">
       <div style="padding: 50px 50px 50px 50px">
@@ -10,8 +11,8 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
           <main >
             <div class="details-mian-div2">
               <div class="details-mian-div2-0">
-                <!--                <img src="../../assets/0(10).png" style="height: 950px;width: 533px;object-fit: contain;object-position: center center">-->
-                <img src="../../assets/0(10).png" style="width: 800px;object-fit: contain;object-position: center center">
+                <!--                <img src="../../assets/10.png" style="height: 950px;width: 533px;object-fit: contain;object-position: center center">-->
+                <img src="../../assets/10.png" style="width: 800px;object-fit: contain;object-position: center center">
               </div>
               <div class="details-mian-div2-1">
                 <div>
@@ -121,6 +122,9 @@ export default {
   display: flex;
   flex-flow: column;
   padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/bg.jpg);
+  background-position: center top;
+  background-size: cover;
 }
 
 .details-mian-div1{

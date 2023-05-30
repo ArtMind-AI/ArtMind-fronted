@@ -10,7 +10,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
           <main >
             <div class="details-mian-div2">
               <div class="details-mian-div2-0">
-                <img src="../../assets/0(29).png" style="width: 800px;object-fit: contain;object-position: center center">
+                <img src="../../assets/29.png" style="width: 800px;object-fit: contain;object-position: center center">
               </div>
               <div class="details-mian-div2-1">
                 <div>

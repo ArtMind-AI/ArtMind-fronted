@@ -59,11 +59,13 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
               <li>
                 <div class="li-div">
                   <div>
+                    <router-link to="/details" tag="a">
                     <img
-                      src="../../assets/0.jpg"
+                      src="../../assets/10.png"
                       alt=""
                       class="div-img"
                     >
+                    </router-link>
                   </div>
                   <div class="li-div1">バレーボール部ししろん</div>
                   <div style="display: flex;align-items: center;padding: 5px">
@@ -79,7 +81,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                 <div class="li-div">
                   <div>
                     <img
-                      src="../../assets/0 (2).jpg"
+                      src="../../assets/2.jpg"
                       alt=""
                       class="div-img"
                     >
@@ -98,7 +100,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                 <div class="li-div">
                   <div>
                     <img
-                      src="../../assets/0 (3).jpg"
+                      src="../../assets/3.jpg"
                       alt=""
                       class="div-img"
                     >
@@ -117,7 +119,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                 <div class="li-div">
                   <div>
                     <img
-                      src="../../assets/0 (4).jpg"
+                      src="../../assets/4.jpg"
                       alt=""
                       class="div-img"
                     >
@@ -136,7 +138,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                 <div class="li-div">
                   <div>
                     <img
-                      src="../../assets/0 (5).jpg"
+                      src="../../assets/5.jpg"
                       alt=""
                       class="div-img"
                     >
@@ -155,7 +157,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                 <div class="li-div">
                   <div>
                     <img
-                      src="../../assets/0 (6).jpg"
+                      src="../../assets/6.jpg"
                       alt=""
                       class="div-img"
                     >
@@ -193,7 +195,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                 <div class="li-div">
                   <div>
                     <img
-                      src="../../assets/0 (23).jpg"
+                      src="../../assets/23.jpg"
                       alt=""
                       class="div-img"
                     >
@@ -212,7 +214,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                 <div class="li-div">
                   <div>
                     <img
-                      src="../../assets/0 (24).jpg"
+                      src="../../assets/24.jpg"
                       alt=""
                       class="div-img"
                     >
@@ -231,7 +233,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                 <div class="li-div">
                   <div>
                     <img
-                      src="../../assets/0 (25).jpg"
+                      src="../../assets/25.jpg"
                       alt=""
                       class="div-img"
                     >
@@ -289,13 +291,11 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
               <li>
                 <div class="li-div">
                   <div>
-                    <router-link to="/details" tag="a">
                       <img
-                        src="../../assets/0(10).png"
+                        src="../../assets/1.jpg"
                         alt=""
                         class="div-img"
                       >
-                    </router-link>
                   </div>
                   <div class="li-div1">海边少女</div>
                   <div style="display: flex;align-items: center;padding: 5px">
@@ -312,7 +312,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
                   <div>
                     <router-link to="/details2" tag="a">
                       <img
-                        src="../../assets/0(29).png"
+                        src="../../assets/29.png"
                         alt=""
                         class="div-img"
                       >
