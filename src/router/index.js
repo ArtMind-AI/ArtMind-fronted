@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Register from '../components/login/login.vue'
 
 Vue.use(Router)
-Vue.use(Register)
 
 const routes = [
-  {path: '/', component: () => import('../components/users/upload.vue')},
+  {path: '/', component: () => import('../components/users/home-page.vue')},
   {path: '/message', component: () => import('../components/users/message.vue')},
   {path: '/collect', component: () => import('../components/users/collect.vue')},
   {path: '/page-tool', component: () => import('../components/users/page-tool.vue')},
@@ -15,16 +13,16 @@ const routes = [
   {path: '/details1', component: () => import('../components/users/details1.vue')},
   {path: '/Header', component: () => import('../components/users/Header.vue')},
   {path: '/details2', component: () => import('../components/users/details2.vue')},
-  {path: '/home-page', component: () => import('../components/users/home-page.vue')},
+  {path: '/upload', component: () => import('../components/users/upload.vue')},
   {path: '/word-image', component: () => import('../components/function/word-image.vue')},
   {
     path: '/api/admin/login',
     name: 'login',
-    component: Register
+    component: () => import('../components/login/login.vue')
   },
   {
     path: '/api/admin/register',
-    name: 'login',
+    name: 'register',
     component: () => import('../components/login/register.vue')
   },
   {path: '/chat', component: () => import('../components/function/chat.vue')},

@@ -5,10 +5,10 @@
         登录
       </div>
       <el-form ref="ruleForm" :model="ruleForm" :rules="rules" class="demo-ruleForm" label-width="100px" status-icon>
-        <el-form-item label="账号" prop="user">
+        <el-form-item label="账号" prop="name">
           <el-input v-model="ruleForm.name" autocomplete="off" type="text"></el-input>
         </el-form-item>
-        <el-form-item label="密码" prop="pass">
+        <el-form-item label="密码" prop="password">
           <el-input v-model="ruleForm.password" autocomplete="off" type="password"></el-input>
         </el-form-item>
         <!--      <el-form-item label="年龄" prop="age">-->
@@ -29,17 +29,17 @@
 export default {
   name: 'login',
   data () {
-    var validatePass = (rule, value, callback) => {
+    let validatePass = (rule, value, callback) => {
       if (value === '') {
         callback(new Error('请输入账户'))
       } else {
-        if (this.ruleForm.pass !== '') {
+        if (this.ruleForm.password !== '') {
           this.$refs.ruleForm.validateField('pass')
         }
         callback()
       }
     }
-    var validatePass2 = (rule, value, callback) => {
+    let validatePass2 = (rule, value, callback) => {
       if (value === '') {
         callback(new Error('请输入密码'))
       } else {
@@ -64,13 +64,36 @@ export default {
   },
   methods: {
     submitData (formName) {
-      this.$router.push({path: '/'})
-    },
-    to_register (formNm) {
-      this.$router.push({path: '/api/admin/register'})
+      this.$refs[formName].validate(valid => {
+        if (valid) {
+          // alert('submit!');
+          let data = this.ruleForm // 将data数据写入变量
+          this.$axios({ // 调用axios方法发动http请求
+            method: 'post', // 访问方式 post
+            url: '/api/admin/login', // 访问路径
+            data // 访问数据
+          }).then((res) => {
+            // 注册成功
+            if (res.status === 200) {
+              this.$message({
+                message: '账号登录成功！',
+                type: 'success'
+              })
+              this.$router.push('/upload')
+            }
+          })
+          // 跳转到登录页面
+        } else {
+          alert('校验失败，用户名或密码错误！')
+          return false
+        }
+      })
     },
     resetForm (formName) {
       this.$refs[formName].resetFields()
+    },
+    to_register (formNm) {
+      this.$router.push({path: '/api/admin/register'})
     }
   }
 }

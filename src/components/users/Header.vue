@@ -17,7 +17,7 @@
           <div class="dropdown-content">
             <img src="../../assets/img.png" style="height: 60px;width: 170px;padding: 5px;border-radius: 10px">
             <div style="height: 450px"></div>
-            <router-link to="/home-page" tag="div">
+            <router-link to="/" tag="div">
               <div class="content-div">登录</div>
             </router-link>
             <div class="content-div">登出</div>

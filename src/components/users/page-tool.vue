@@ -17,7 +17,7 @@
         <el-menu-item-group>
           <el-menu-item index="1-1">创作</el-menu-item>
           <el-menu-item>
-            <router-link tag="div" to="/">上传</router-link>
+            <router-link tag="div" to="/upload">仓库</router-link>
           </el-menu-item>
           <el-menu-item index="1-3">关注</el-menu-item>
           <el-menu-item index="1-4">

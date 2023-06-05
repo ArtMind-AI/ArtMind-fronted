@@ -14,7 +14,7 @@ import axios from 'axios'
 Vue.prototype.$axios = axios // 在Vue的原型上添加一个$http属性，该属性保存了axios
 Vue.use(Viewer)
 Vue.use(ElementUI)
-axios.defaults.baseURL = '/api'
+axios.defaults.baseURL = 'http://localhost:3000'
 
 /* eslint-disable no-new */
 new Vue({

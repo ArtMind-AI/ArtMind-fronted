@@ -14,7 +14,7 @@ background: linear-gradient(245deg, rgba(216,239,255,1) 0%, rgba(245,232,255,1) 
           </div>
           <el-tabs v-model="activeName" @tab-click="handleClick" style="height: 100%">
             <el-tab-pane label="创作" name="first"></el-tab-pane>
-            <el-tab-pane label="上传" name="second"></el-tab-pane>
+            <el-tab-pane label="仓库" name="second"></el-tab-pane>
             <el-tab-pane label="关注" name="third"></el-tab-pane>
             <el-tab-pane label="收藏" name="fourth">
               <ul style="padding: 0;flex-wrap: wrap;margin: -12px;display: flex;list-style: none;">

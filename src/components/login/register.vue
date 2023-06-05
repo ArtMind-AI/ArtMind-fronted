@@ -11,12 +11,32 @@
         <el-form-item label="密码" prop="password">
           <el-input v-model="ruleForm.password" autocomplete="off" type="password"></el-input>
         </el-form-item>
-        <!--      <el-form-item label="年龄" prop="age">-->
-        <!--        <el-input v-model.number="ruleForm.age"></el-input>-->
-        <!--      </el-form-item>-->
+        <el-form-item label="邮箱" prop="email">
+<!--          <el-input v-model="ruleForm.email" autocomplete="off" type="text" style="width: 275px"></el-input>-->
+<!--          <el-button type="primary" @click="submitemail('ruleForm')">提交</el-button>-->
+          <el-input v-model="ruleForm.email" autocomplete="off" type="text"></el-input>
+        </el-form-item>
+        <el-row>
+          <el-col :span="9">
+          <el-form-item label="性别" prop="sex">
+            <el-select v-model="ruleForm.sex" placeholder="">
+              <el-option label="男" value="boy"></el-option>
+              <el-option label="女" value="girl"></el-option>
+            </el-select>
+          </el-form-item>
+          </el-col>
+          <el-col :span="6">
+          <el-form-item label="生日" prop="birthday">
+            <el-col :span="11">
+              <el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date1" style="width: 180px"></el-date-picker>
+            </el-col>
+          </el-form-item>
+          </el-col>
+        </el-row>
         <el-form-item>
           <el-button type="primary" @click="submitData('ruleForm')">提交</el-button>
           <el-button @click="resetForm('ruleForm')">重置</el-button>
+          <el-button @click="to_login('ruleForm')">登录</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -25,7 +45,7 @@
 
 <script>
 export default {
-  name: 'login',
+  name: 'register',
   data () {
     let validatePass = (rule, value, callback) => {
       if (value === '') {
@@ -44,10 +64,18 @@ export default {
         callback()
       }
     }
+    let validatePass3 = (rule, value, callback) => {
+      if (value === '') {
+        callback(new Error('请输入邮箱'))
+      } else {
+        callback()
+      }
+    }
     return {
       ruleForm: {
         name: '',
         password: ''
+        // email: ''
       },
       rules: {
         name: [
@@ -55,6 +83,9 @@ export default {
         ],
         password: [
           {validator: validatePass2, trigger: 'blur'}
+        ],
+        email: [
+          {validator: validatePass3, trigger: 'blur'}
         ]
       },
       isLogin: false
@@ -85,8 +116,13 @@ export default {
         }
       })
     },
+    // submitemail () {
+    // },
     resetForm (formName) {
       this.$refs[formName].resetFields()
+    },
+    to_login (formNm) {
+      this.$router.push({path: '/api/admin/login'})
     }
   }
 }
@@ -98,12 +134,12 @@ body {
 }
 
 #login-container {
-  width: 400px;
-  height: 290px;
+  width: 450px;
+  height: 400px;
   background: #e5e9f2;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   margin-left: -220px;
   margin-top: -170px;
   border-radius: 5px;

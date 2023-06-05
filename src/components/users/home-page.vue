@@ -1,7 +1,7 @@
 <template>
   <el-container class="container">
     <div class="navbar">
-      <img class="logo" src="../../assets/logo1.png"/>
+      <img class="logo" src="../../assets/logo.png"/>
       <nav>
         <ul>
           <li><a href="#">HOME</a></li>
